@@ -9,7 +9,7 @@ const HighlightedArray = ({ array, highlightIndex }) => {
           backgroundColor: i === highlightIndex ? "green" : "#ddd",
         }}
       >
-        {s}
+        {typeof s==='object'? JSON.stringify(s):s}
       </span>
     ));
   };

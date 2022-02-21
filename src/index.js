@@ -12,6 +12,7 @@ import Arrays from "./demos/basics/arrays/Arrays";
 import ReactNav from "./nav/ReactNav";
 import UserInput from "./demos/react/UserInput";
 import StateDemo from "./demos/react/StateDemo";
+import TodoList from "./demos/react/todos/TodoList";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -22,6 +23,7 @@ ReactDOM.render(
           <Route path="counter" element={<Counter />} />
           <Route path="axios_get" element={<AxiosGet />} />
           <Route path="user_input" element={<UserInput />} />
+          <Route path="todos" element={<TodoList />} />
         </Route>
         <Route path="basics" element={<Basics />}>
           <Route path="arrays" element={<Arrays />} />

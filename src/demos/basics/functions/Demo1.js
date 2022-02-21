@@ -3,7 +3,7 @@ import DemoContainer from '../../DemoContainer'
 
 
 const Demo1 = (props)=>{
-    const originalData = [10,20,30,40,50]
+    const originalData = [10,20,30,4,5]
     const click1 = ()=>{
        let y = sample()
        alert(originalData[y])
@@ -15,7 +15,7 @@ const Demo1 = (props)=>{
     }
 
     return (
-        <DemoContainer header='Filter Example' code={Demo1Code} >
+        <DemoContainer header='Filter Example' code={Demo1Code} markdown={filterMarkdown}>
             {/* No Value */}
             <button onClick={click1}>click1</button>
         </DemoContainer>
@@ -27,7 +27,7 @@ export const Demo1Code=`import DemoContainer from '../../DemoContainer'
 
 
 const Demo1 = (props)=>{
-    const originalData = [10,20,30,40,50]
+    const originalData = [1,2,3,4,5]
     const click1 = ()=>{
        let y = sample()
        alert(originalData[y])

@@ -16,10 +16,11 @@ function ReactNav() {
         }}
       >
         <p>React Sections:</p>
-        <Link to="/react/state_demo">State Demo</Link>
+        <Link to="/react/state">State Demo</Link>
         <Link to="/react/counter">Counter</Link>
         <Link to="/react/axios_get">Map</Link>
         <Link to="/react/user_input">User Input</Link>
+        <Link to="/react/todos">Todos</Link>
       </nav>
     </>
   );
