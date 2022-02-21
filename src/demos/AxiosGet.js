@@ -21,10 +21,10 @@ const AxiosGet = (props) => {
     setLoading(true);
   };
   return (
-    <>
+    <DemoContainer header='Getting Users with Axios' code={AxiosGetCode}>
       <p>Users</p>
       {JSON.stringify(users)}
-    </>
+    </DemoContainer>
   );
 };
 

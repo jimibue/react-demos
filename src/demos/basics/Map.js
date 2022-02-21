@@ -1,14 +1,15 @@
 import {useState} from 'react'
+import DemoContainer from '../DemoContainer'
 
 
 const Map = (props)=>{
     const originalData = [1,2,3,4,5]
     const [dataState, setDataState] = useState(originalData)
     const mapData = ()=>{
-        setDataState(dataState.map(d => d+ '!'))  
+        setDataState(dataState.map(d => d * 2))  
     }
     return (
-        <div>
+        <DemoContainer header='Map Example' code={MapCode}>
             <button onClick={mapData}>map</button>
             <hr />
             <p>originalData</p>
@@ -16,12 +17,12 @@ const Map = (props)=>{
             <hr />
             <p>dataState</p>
             {JSON.stringify(dataState)}
-        </div>
+        </DemoContainer>
     )
 }
 export default Map
 
-export const MapData=`//
+export const MapCode=`//
 import {useState} from 'react'
 const Map = (props)=>{
     const originalData = [1,2,3,4,5]
